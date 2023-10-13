@@ -1,22 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Walter+Turncoat&display=swap');
 
+
+#logo_link{
+    padding-top: 5px;
+}
+
+body{
+    background-color: #d3d5dc;
+    margin: 0;
+    padding: 0;
+}
 
 #content{
     max-width: 1600px;
     margin: 0 auto;
+    font-family: Mooli, Helvetica, sans-serif;
+    font-size: 22px;
 }
 
 header{
     background-color: #d3d5dc;
 }
 
-body{
-    background-color: #d3d5dc;
-}
 
 nav a{
     text-align: center;
     text-decoration: none;
     color: #0b2e1a;
+    padding: 35px;
 }
 
 nav a:hover{
@@ -30,10 +41,17 @@ nav a:hover{
 
 .Home-title{
     color: #0b2e1a;
-}
+    font-family: "Walter Turncoat", Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin-top: 10px;
+}   
 
 h4{
     color: #0b2e1a;
+}
+
+h2{
+    margin: 0;
 }
 
 #hero-msg h1, #hero-msg h4{
@@ -48,17 +66,38 @@ main section{
     text-align: center;
 }
 
+main section img{
+    box-sizing: border-box;
+}
+
 .book, .join{
     background-color: #0b2e1a;
     color: #d3d5dc;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover{
     background-color: #272a73;
     color: white;
     text-decoration: none;
-}    
+}
+
+.card-img{
+    border: 10px solid #0b2e1a;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+.mountains{
+    margin: 100px 0 200px 0;
+}
+
 #background{
     height: 725px;
     background-color: #0b2e1a;
@@ -67,20 +106,38 @@ main section{
 .msg{
     background-color: #0b2e1a;
     color: #d3d5dc;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 p{
     color: #d3d5dc;
 }
 
+.msg p{
+    color: #d3d5dc;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+.msg h2{
+    font-family: "Walter Turncoat", Georgia, 'Times New Roman', Times, serif;
+}
+
 footer{
     background-color: #0b2e1a;
     color: #d3d5dc;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a{
     color: #d3d5dc;
     text-decoration: none;
+}
+
+footer .social img{
+    padding-top: 15px;
 }
 
 footer a:hover{
@@ -93,4 +150,5 @@ footer a:hover{
 
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
