@@ -2,15 +2,40 @@
 
 /* header */
 header{
-    background-color: #d3d5dc;
+    background: rgba(11, 46, 26, .3);
     display: grid;
     grid-template-columns: 150px auto;
 }
+header div.logo-img{
+    background-color: #d3d5dc;
+    border-radius: 300px;
+    padding: 5px;
+    justify-self: center;
+    align-self: center;
+}
 
 #logo_link{
+    opacity: 1;
     padding-top: 5px;
     justify-self: center;
     align-self: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-align: center;
+    text-decoration: none;
+    padding: 35px;
+    color: white;
+}
+
+nav a:hover{
+    background-color: #d3d5dc;
+    color: #0b2e1a;
 }
 
 #hero{
@@ -64,23 +89,6 @@ body{
     margin: 0 auto;
     font-family: Mooli, Helvetica, sans-serif;
     font-size: 22px;
-}
-
-nav{
-    display: flex;
-    justify-content: space-around;
-}
-
-nav a{
-    text-align: center;
-    text-decoration: none;
-    padding: 35px;
-    color: #0b2e1a;
-}
-
-nav a:hover{
-    background-color: #0b2e1a;
-    color: white;
 }
 
 #hero-img{
