@@ -174,3 +174,29 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+#inner-list{
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  list-style: none;
+  display: block;
+  text-align: left;
+  margin-left: 15%;
+}
+#pricing-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 15px auto;
+  column-gap: 15px;
+}
+#starter-pack, #business-pack, #pro-pack, #max-pack{
+  padding: 5px;
+  border: #0000ff solid 3px;
+  border-radius: 15px;
+}
+#starter-pack{
+  grid-column: 1/2;
+}
+.intro-pricing{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
