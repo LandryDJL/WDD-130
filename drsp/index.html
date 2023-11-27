@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div id="logo_link">
+                <a href="index.html"><img class="logo-img" src="images/Digital_Real_Solutions_print.png" alt="drsp_logo"></a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="pricing.html">Pricing</a>
+                <div id="button-get-started"><a href="services.html " style="text-align: center; text-decoration: none; padding: 10px; color: white; align-self: flex-end; background-color: #ffae00; border-radius: 50px;">Get Started</a></div>
+            </nav>
+        </header >
+        <main class="home-grid">
+            <div id="blue_bg"></div>
+            <div id="white_bg"></div>
+            <div id="home-content">
+                <div id="home-text">
+                    <h1>DIGITAL REALM</h1>
+                    <h1>SOLUTIONS PRINT</h1>
+                    <p>We provide professional graphic design services to enhance your branding and  high-quality printing solutions for marketing materials.</p>
+                    <div id="box-motto"><p id="motto"><em>Trust us with your design and printing needs, and we will ensure your message stands out.</em></p></div>
+                    <br>
+                    <div id="button-get-started" ><a href="services.html " style="text-align: center; width: 40px; text-decoration: none; padding: 15px 20px 15px 20px; font-size: 22px; color: white; font-weight: bold; background-color: #ffae00; border-radius: 50px;">Get Started</a></div>
+                </div>
+                <div id="home-slideshow">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                            <span class="dot" onclick="currentSlide(6)"></span>
+                        </div>
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <img src="images/ads.jpg" style="width:100%">
+                            <br>
+                            <div class="text">Adverts Designs</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/brochure.jpg" style="width:100%">
+                            <br>
+                            <div class="text">Brochures Designs</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/business-card.jpg" style="width:100%">
+                            <br>
+                            <div class="text">Business Card Designs</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/invitation-card.jpg" style="width:100%">
+                            <br>
+                            <div class="text">Flyers Designs</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/t-shirt.jpg" style="width:100%">
+                            <br>
+                            <div class="text">T-Shirts Designs</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/logo.jpg" style="width:100%">
+                            <br>
+                            <div class="text">Logo Designs</div>
+                        </div>
+                    </div>
+                    <!-- <div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div> -->
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/fb.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/insta.png" alt="instagram icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedin icon">
+                </a>
+            </div>
+            <p class="copy">Copyright  &copy;  2023  DRSP</p>
+            <p class="site-plan"><a href="site-plan.html">Site Plan</a></p>
+            <p class="contactus"><a href="#">Contact Us</a></p>
+        </footer>
+        <script>
+            let slideIndex = 0;
+            let timeoutId = null;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+            
+            showSlides();
+            function currentSlide(index) {
+                 slideIndex = index;
+                 showSlides();
+            }
+           function plusSlides(step) {
+              
+              if(step < 0) {
+                  slideIndex -= 2;
+                  
+                  if(slideIndex < 0) {
+                    slideIndex = slides.length - 1;
+                  }
+              }
+              
+              showSlides();
+           }
+            function showSlides() {
+              for(let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                dots[i].classList.remove('active');
+              }
+              slideIndex++;
+              if(slideIndex > slides.length) {
+                slideIndex = 1
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].classList.add('active');
+               if(timeoutId) {
+                  clearTimeout(timeoutId);
+               }
+              timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
+            }
+          </script>
+    </div>
+</body>
+</html>
