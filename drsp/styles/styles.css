@@ -66,7 +66,6 @@ nav a:active{
     color: white;
     border-radius: 100px;
     font-weight: bold;
-
 }
 
 /* Home Grid */
@@ -314,20 +313,21 @@ footer p a:hover{
 }
 .background-title{
     grid-column: 1/11;
+    grid-row-start: 1;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     background-color: #f7ebc0;
-    justify-content: center;
     width: auto;
     margin: 0 auto;
-    z-index: -100;
+    height: 70px;
+    z-index: -1;
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 30px 30px 0px 0px;
     border-bottom: 5px solid #0000ff;
 }
 .page-title{
-    grid-column: 5/7;
+    grid-column: 2/10;
     grid-row: 1/2;
     justify-self: center;
     
@@ -485,23 +485,6 @@ footer p a:hover{
     z-index: -1;
     color: #0000ff;
 }
-.background-title{
-    grid-column: 1/11;
-    grid-row-start: 1;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    background-color: #f7ebc0;
-    justify-content: center;
-    width: auto;
-    margin: 0 auto;
-    height: 100px;
-    z-index: -1;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 30px 30px 0px 0px;
-    border-bottom: 5px solid #0000ff;
-}
-
 .intro-pricing{
     grid-column: 1/11;
     grid-row: 1/2;
@@ -513,12 +496,11 @@ footer p a:hover{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     background-color: #f7ebc0;
-    margin-top: 30px;
     text-align: center;
     width: auto;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 10%;
+    margin-top: 9%;
     padding: 20px;
 }
 .starter-pack{
@@ -539,7 +521,7 @@ footer p a:hover{
 }
 .pro-pack{
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 250, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 250, 0.2), 0 6px 20px 0 rgba(0, 0, 250, 0.19);
     grid-column: 2/4;
     margin: 15px;
     text-align: center;
@@ -547,7 +529,7 @@ footer p a:hover{
 }
 .max-pack{
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 250, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 250, 0.2), 0 6px 20px 0 rgba(0, 0, 250, 0.19);
     grid-column: 4/6;
     margin: 15px;
     text-align: center;
@@ -571,6 +553,9 @@ footer p a:hover{
     margin-right: auto;
     padding: 5px;
 }
+.button-choose a:hover{
+    font-weight: bold;
+}
 .button-choose a{
     color: white;
 }
@@ -584,22 +569,30 @@ footer p a:hover{
 }
 
 /* contactus page */
-#contact-main{
+.contact-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
     height: auto;
-    /* position: relative; */
     z-index: -2;
+    grid-row-start: 2;
 }
-#contact-content{
-    align-content:center;
+.contact-main{
+    display: grid;
+    grid-column: 1/11;
+    grid-template-rows: auto auto;
+    grid-row-start: 1;
+    margin-top: 50px;
+    row-gap: 10px;
+
+}
+.contactus-form{
+    text-align:center;
     background-color: #f7ebc0;
+    grid-row-start: 3;
+    grid-column: 1/11;
+    width: 80%;
+    margin: 0 auto;
     border-radius: 50px;
-    width: 800px;
-    margin: auto 0;
-    margin-left: auto;
-    margin-right: auto;
 }
 form {
     /* Center the form on the page */
@@ -634,19 +627,15 @@ textarea:focus {
     /* Additional highlight for focused elements */
     border-color: #ffae00;
 }
+input{
+    padding: 5px 10px 5px 10px;
+}
 textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
-
-    /* Provide space to type some text */
-    height: 5em;
+    vertical-align: top; /* Align multiline text fields with their labels */
+    height: 7em;
+    padding: 15px;
 }
-.button {
-    /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
-    font-family: Mooli, Helvetica, sans-serif;
-}
-button {
+button{
     /* This extra margin represent roughly the same space as the space
     between the labels and their text fields */
     color: white;
@@ -656,6 +645,9 @@ button {
     font-size: 20px;
     padding: 10px 20px 10px 20px; 
 
+}
+button:hover{
+    font-weight: bold;
 }
 ::placeholder{
     color: #f7ebc0;
@@ -674,7 +666,7 @@ button {
 .moveDown {
     margin-top: 3em;
 }
-
+/* 
 @media screen and (max-width: 900px) {
     #content{
         text-align: left;
@@ -684,7 +676,7 @@ button {
         height: auto;
     }
     /* header */
-    nav, footer {
+    /* nav, footer {
         flex-direction: column;
     }
     nav a {
@@ -719,19 +711,19 @@ button {
     }
     #logo_link{
         text-align: center;
-    }
+    } */
     /* nav{
         display: block;
         justify-content:space-evenly;
     } */
-
+/* 
     footer{
         display: block;
         background-color: white;
         color: #0000ff;
         text-align: center;
         /* margin-left: auto; */
-        margin-right: auto;
+        /* margin-right: auto;
     }
     footer .social{
         display: flex;
@@ -772,6 +764,6 @@ button {
         font-weight: bold;
         padding: 10px;
     }
+     
     
-    
-}
+} */
