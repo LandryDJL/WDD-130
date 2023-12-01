@@ -666,34 +666,33 @@ button:hover{
 .moveDown {
     margin-top: 3em;
 }
-/* 
+
 @media screen and (max-width: 900px) {
     #content{
-        text-align: left;
-    }
-    .home-grid {
+        width: 100%;
         display: block;
-        height: auto;
+        font-family: Titillium Web, Helvetica, sans-serif;
+        font-size: 18px;
+        z-index: -999;
+        position:absolute;
     }
     /* header */
-    /* nav, footer {
-        flex-direction: column;
-    }
-    nav a {
+    header{
         display: block;
-        padding: 15px;
     }
-    nav a:hover{
-        background-color: #0000ff;
-        color: white;
-        border-radius: 100px;
-        font-weight: bold;
+    .logo-img{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
     }
-    nav a:active{
-        background-color: #0000ff;
-        color: white;
-        border-radius: 100px;
-        font-weight: bold;
+    #logo_link{
+        text-align: center;
+    }
+    nav{
+        display: block;
+        width: 100%;
+        margin: auto;
+        text-align: center;
     }
     nav #button-get-started{
         text-align: center;
@@ -704,31 +703,74 @@ button:hover{
         background-color: #ffae00;
         border-radius: 50px;
     }
-    .logo-img{
-        width: 150px;
+    nav a{
         text-align: center;
-        margin: auto;
+        text-decoration: none;
+        padding: 10px;
+        color: #0000ff;
+        align-self: flex-end;
+        font-weight: bold;
+        padding-bottom: 10px;
     }
-    #logo_link{
-        text-align: center;
-    } */
-    /* nav{
+
+    #blue_bg{
+        background-color: #0000ff;
+        border-radius: 15px;
+        height: 100px;
+        z-index: -2;
+    }
+    #white_bg{
+        background-color: white;
+        border-radius: 15px;
+        height: 100px;
+        z-index: -1;
+        margin-top: 20px;
+    }
+    #home-content{
         display: block;
-        justify-content:space-evenly;
-    } */
-/* 
+        margin-top: 50px;
+        background-color: #f7ebc0;
+        border-radius: 30px;
+        margin-left: 3%;
+        margin-right: 3%;
+        height: 1350px;
+        z-index: -1;
+    }
+    #home-text{
+        display: block;
+        margin-top: 100px;
+        margin-left: 40px;
+        margin-right: 20px;
+        height: 500px;
+        align-content: space-between;
+    }
+
+    
+    /* Slideshow container */
+    #home-slideshow{
+        border-radius: 10px;
+        margin-top: 50px;
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .Home-title{
+        color: #0b2e1a;
+        font-family: "Phudu", Georgia, 'Times New Roman', Times, serif;
+        font-size: 2em;
+        margin-top: 10px;
+    }   
+    /* Footer */
     footer{
         display: block;
-        background-color: white;
-        color: #0000ff;
         text-align: center;
-        /* margin-left: auto; */
-        /* margin-right: auto;
     }
     footer .social{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-around;
+        display: inline;
+        margin: auto;
     }
     footer .social img{
         width: 40px;
@@ -736,26 +778,23 @@ button:hover{
         padding-top: 15px;
     }
     .copy{
-        font-size: 15px;
+        font-size: 18px;
         font-weight: bold;
     }
     footer p a{
         color: #0000ff;
         text-decoration: none;
         padding: 10px;
+        width: 100%;
         font-weight: bold;
-        border-radius: 0px;
-        border: none;
-    }
-    footer p{
-        font-size: 15px;
-        margin-top: 20px;
+        border-radius: 100px;
+        border: 3px solid #0000ff;
     }
     .site-plan{
-        margin-left: 0px;
+        margin: 0;
     }
     .contactus{
-        margin-right: 0px;
+        margin: 30px;
     }
     footer p a:hover{
         background-color: #0000ff;
@@ -763,7 +802,6 @@ button:hover{
         border-radius: 100px;
         font-weight: bold;
         padding: 10px;
-    }
-     
+    }    
     
-} */
+}
