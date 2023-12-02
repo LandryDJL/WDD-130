@@ -15,6 +15,9 @@ body{
     z-index: -999;
     position:absolute;
 }
+h1, h4{
+    font-family: "Phudu", Georgia, 'Times New Roman', Times, serif;
+}
 
 /* header */
 header{
@@ -67,6 +70,7 @@ nav a:active{
     border-radius: 100px;
     font-weight: bold;
 }
+
 
 /* Home Grid */
 .home-grid{
@@ -220,13 +224,6 @@ animation-duration: 1s;
 from {opacity: .4}
 to {opacity: 1}
 }
-
-.Home-title{
-    color: #0b2e1a;
-    font-family: "Phudu", Georgia, 'Times New Roman', Times, serif;
-    font-size: 2em;
-    margin-top: 10px;
-}   
 
 
 /* Footer */
@@ -710,7 +707,6 @@ button:hover{
         font-weight: bold;
         margin-bottom: 50px;
     }
-
     #blue_bg{
         background-color: #0000ff;
         border-radius: 15px;
@@ -731,12 +727,12 @@ button:hover{
         border-radius: 30px;
         margin-left: 3%;
         margin-right: 3%;
-        height: 1350px;
+        height: 1200px;
         z-index: -1;
     }
     #home-text{
         display: block;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-left: 40px;
         margin-right: 20px;
         height: 500px;
