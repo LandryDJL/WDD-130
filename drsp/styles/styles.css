@@ -886,11 +886,8 @@ button:hover{
     }
    
     .slideshow-container {
-        float: center;
         max-width: 80%;
         margin: auto;
-        padding-left: auto;
-        padding-right: auto;
     }
 
     /* Pricing page */
